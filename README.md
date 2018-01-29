@@ -45,10 +45,10 @@ Le contrôleur fait le lien entre le modèle et la vue, il gère les requêtes d
 
 5. Le code HTML de la vue est envoyé à l’utilisateur pour qu’il puisse naviguer normalement
 
-<p align="right">
+<p align="left">
  <a href="https://www.supinfo.com/articles/single/1625-mvc-presentation-patron-conception" target="_blank">Source</a>
 <p>
-	
+
 <p align="center">
 	<img src="https://www.elephorm.com/system/files/imagecache/thumb_full_widescreen/formations/MASTER-SYMPHONY/vignettes/le-design-pattern-mvc.jpg" alt="MVC" target="_blank">
 </p>
