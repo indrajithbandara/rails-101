@@ -58,9 +58,11 @@ Ce *design pattern* est une solution reconnue permettant de séparer l’afficha
 ### Les routes
 <hr>
 
-Dans le framework Rails nos routes se trouve dans `config/routes.rb`
+Une route c'est une url ou unique ressource locator ex : `"/"` c'est la route qui est à la racine de notre application.
 
-Une route un verbe qui représente la requette HTTP, la route/url, le controlleur et l'action ex: `GET /articles(:id) articles#index` 
+Dans le framework Rails nos routes se trouve dans `config/routes.rb` => a requette HTTP, la route/url, le controlleur et l'action ex: `GET /articles(:id) articles#index` 
+
+Une route c' est un verbe qui représente la requette HTTP.
 
 Dans les contrôleurs, il existe sept routes très fréquemment utilisées :
 
@@ -132,13 +134,14 @@ production:
 
 GET : les données transiteront par l'URL. Cette méthode est assez peu utilisée car on ne peut pas envoyer beaucoup d'informations dans l'URL.
 
+>NEVER TRUST USER INPUT
+
 POST : les données ne transiteront pas par l'URL, l'utilisateur ne les verra donc pas passer dans la barre d'adresse. Cette méthode permet d'envoyer autant de données que l'on veut, ce qui fait qu'on la privilégie le plus souvent. Néanmoins, il faudra toujours vérifier si tous les paramètres sont bien présents et valides. 
 
 <p align="center">
 	<img src="http://www.java8s.com/img/get.PNG" alt="get-vs-post">
 </p>
 
->NEVER TRUST USER INPUT
 
 <a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql/transmettre-des-donnees-avec-les-formulaires">OPC</a>
 
@@ -159,9 +162,15 @@ On écrit une migration et celle-ci update notre bdd.
 ### Les relations entre les models des BDD
 <hr>
 
+>Le modèle le plus courant, appelé modèle relationnel, trie les données dans des tables, que l'on appelle aussi des relations, dont chacune se compose de colonnes et de lignes. Chaque colonne contient un attribut de l'entité en question, comme le prix, le code postal ou la date de naissance. L'ensemble des attributs d'une relation est appelé domaine. La clé primaire est constituée par un attribut spécifique ou une combinaison d'attributs. On peut y faire référence dans d'autres tables : elle est alors appelée clé étrangère.
+Chaque ligne, également appelée tuple, comprend des données sur une instance spécifique de l'entité en question, comme un employé en particulier.
+Le modèle tient également compte des types de relations entre ces tables, notamment les relations un-à-un, un-à-plusieurs et plusieurs-à-plusieurs. Voici un exemple :
 
+<p align="center">
+	<img src="https://www.lucidchart.com/pages/fr/quest-ce-quun-mod%C3%A8le-de-base-de-donn%C3%A9es" alt="bdd">
+</p>
 
-
+<a href="https://www.lucidchart.com/pages/fr/quest-ce-quun-mod%C3%A8le-de-base-de-donn%C3%A9es">Source</a>
 
 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png "Ruby On Rails"
