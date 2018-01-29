@@ -95,7 +95,7 @@ En ligne de commande on peut afficher toutes les routes disponibles dans notre a
 ### Les Bases de Données
 <hr>
 
-Dans le fichier `config/database.yml` on constate que Rails utilise par default sqlite3, ceci est modifiable dès l' installation en ligne de commande avec l' option `-d` ou `--database` `mysql, oracle, postgresql, sqlite3, frontbase, ibm_db, sqlserver, jdbcmysql, jdbcsqlite3, jdbcpostgresql, jdbc`
+Dans le fichier `config/database.yml` on constate que Rails utilise par default sqlite3, ceci est modifiable dès l' installation avec l' option `-d` ou `--database` `mysql, oracle, postgresql, sqlite3, frontbase, ibm_db, sqlserver, jdbcmysql, jdbcsqlite3, jdbcpostgresql, jdbc`
 
 On peut également configurer un base de donnée par environnement, development, test, production.
 
@@ -128,6 +128,18 @@ production:
 
 ### GET / POST
 <hr>
+
+>NEVER TRUST USER INPUT
+
+GET : les données transiteront par l'URL. Cette méthode est assez peu utilisée car on ne peut pas envoyer beaucoup d'informations dans l'URL.
+
+POST : les données ne transiteront pas par l'URL, l'utilisateur ne les verra donc pas passer dans la barre d'adresse. Cette méthode permet d'envoyer autant de données que l'on veut, ce qui fait qu'on la privilégie le plus souvent. Néanmoins, les données ne sont pas plus sécurisées qu'avec la méthode GET et il faudra toujours vérifier si tous les paramètres sont bien présents et valides. 
+
+<p align="center">
+	<img src="http://www.java8s.com/img/get.PNG" alt="get-vs-post">
+</p>
+
+<a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql/transmettre-des-donnees-avec-les-formulaires">OPC</a>
 
 ### Le concept de migration
 <hr>
