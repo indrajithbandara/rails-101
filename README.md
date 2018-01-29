@@ -105,22 +105,23 @@ On peut également configurer un base de donnée par environnement, development,
 default: &default
   adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
+  timeout: 5000`
 
-development:
+`development:
   <<: *default
-  database: db/development.sqlite3
-test:
+  database: db/development.sqlite3`
+`test:
   <<: *default
-  database: db/test.sqlite3
-production:
+  database: db/test.sqlite3`
+`production:
   <<: *default
   database: db/production.sqlite3`
 
   <img src="https://ruudwijnands.files.wordpress.com/2014/03/database_yml_-_testproject_-____rubymineprojects_testproject_.png" alt="database" targer="_blank">
 
-<a href="https://www.tutorialspoint.com/ruby-on-rails/rails-database-setup.htm">Rails DB setup</a>
-
+<p align="center">
+	<a href="https://www.tutorialspoint.com/ruby-on-rails/rails-database-setup.htm">Rails DB setup</a>
+</p>
 ### GET / POST
 <hr>
 
