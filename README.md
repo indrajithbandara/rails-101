@@ -28,13 +28,13 @@ Une page web statique est une page web dont le contenu ne varie pas en fonction 
 ### Le MVC
 <hr>
 <p>
-Ce design pattern est une solution reconnue permettant de séparer l’affichage des informations (la vue), les actions de l’utilisateur (le contrôleur) et l’accès aux données (le modèle).
+Ce *design pattern* est une solution reconnue permettant de séparer l’affichage des informations (la vue), les actions de l’utilisateur (le contrôleur) et l’accès aux données (le modèle).
 
-Le modèle est ce que l’on appelle un objet, c’est le cœur de l’application. Il traite principalement les données et les interactions avec la base de données.
+**Le modèle** est ce que l’on appelle un objet, c’est le cœur de l’application. Il traite principalement les données et les interactions avec la base de données.
 
-La vue traite ce que nous voyons dans notre navigateur web, elle restitue le modèle au sein de notre interface web et permet à l’utilisateur d’interagir avec le modèle.
+**La vue** traite ce que nous voyons dans notre navigateur web, elle restitue le modèle au sein de notre interface web et permet à l’utilisateur d’interagir avec le modèle.
 
-Le contrôleur fait le lien entre le modèle et la vue, il gère les requêtes des utilisateurs et détermine les traitements qui doivent être effectués pour chaque action. Il va utiliser les données du modèle, les traiter et les envoyer à la vue pour que celle-ci les affiche.
+**Le contrôleur** fait le lien entre le modèle et la vue, il gère les requêtes des utilisateurs et détermine les traitements qui doivent être effectués pour chaque action. Il va utiliser les données du modèle, les traiter et les envoyer à la vue pour que celle-ci les affiche.
 <a href="https://www.supinfo.com/articles/single/1625-mvc-presentation-patron-conception" target="_blank">Source</a>
 
 <p>
@@ -57,6 +57,47 @@ Le contrôleur fait le lien entre le modèle et la vue, il gère les requêtes d
 
 ### Les routes
 <hr>
+
+Dans les contrôleurs, il existe sept routes très fréquemment utilisées :
+
+index, create, show, update, destroy, new, edit.
+
+Quand nous respectons ces routes, tout un tas de choses peuvent s’automatiser. Par exemple﻿﻿, il est possible de passer de ceci :
+
+```# config/routes.rb
+Rails.application.routes.draw do
+  get 'articles' => 'articles#index'
+  post 'articles' => 'articles#create'
+  get 'articles/:id' => 'articles#show'
+  patch 'articles/:id' => 'articles#update'
+  delete 'articles/:id' => 'articles#destroy'
+end```
+
+À ceci :
+
+```
+# config/routes.rb
+Rails.application.routes.draw do
+  resources :books, only: [:index, :create, :show, :update, :destroy]
+end```
+
+En ligne de commande on peut afficher toutes les routes disponibles dans notre application
+
+```rails routes```
+
+```
+
+GET  /articles(.:format) articles#index
+POST  /articles(.:format) articles#create
+GET  /articles/new(.:format) articles#new
+GET  /articles/:id/edit(.:format) articles#edit
+GET  /articles/:id(.:format) articles#show
+PATCH  /articles/:id(.:format) articles#update
+PUT  /articles/:id(.:format) articles#update
+DELETE /articles/:id(.:format) articles#destroy```
+<a href="https://openclassrooms.com/courses/continuez-avec-ruby-on-rails/simplifiez-la-configuration-de-vos-routes">OPC</a>
+
+<a href="http://guides.rubyonrails.org/routing.html">Routing avec Rails DOC</a>
 
 ### Les Bases de Données
 <hr>
