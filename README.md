@@ -129,21 +129,31 @@ production:
 ### GET / POST
 <hr>
 
->NEVER TRUST USER INPUT
 
 GET : les données transiteront par l'URL. Cette méthode est assez peu utilisée car on ne peut pas envoyer beaucoup d'informations dans l'URL.
 
-POST : les données ne transiteront pas par l'URL, l'utilisateur ne les verra donc pas passer dans la barre d'adresse. Cette méthode permet d'envoyer autant de données que l'on veut, ce qui fait qu'on la privilégie le plus souvent. Néanmoins, les données ne sont pas plus sécurisées qu'avec la méthode GET et il faudra toujours vérifier si tous les paramètres sont bien présents et valides. 
+POST : les données ne transiteront pas par l'URL, l'utilisateur ne les verra donc pas passer dans la barre d'adresse. Cette méthode permet d'envoyer autant de données que l'on veut, ce qui fait qu'on la privilégie le plus souvent. Néanmoins, il faudra toujours vérifier si tous les paramètres sont bien présents et valides. 
 
 <p align="center">
 	<img src="http://www.java8s.com/img/get.PNG" alt="get-vs-post">
 </p>
+
+>NEVER TRUST USER INPUT
 
 <a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql/transmettre-des-donnees-avec-les-formulaires">OPC</a>
 
 ### Le concept de migration
 <hr>
 
+Les migrations dans Rails nous permettent de faire évoluer le schema de notre base de donnée facilement, sans faire de SQL. 
+
+<p align="center">
+	<img src="https://leanpub.com/site_images/rails3dot0-astudentmanual/db-cheatsheet.png" alt="db-cheatsheet" traget="_blank">
+</p>
+
+<a href="http://edgeguides.rubyonrails.org/active_record_migrations.html">Doc Ruby Migrations</a>
+
+<a href="https://scotch.io/tutorials/understanding-migrations-in-rails">Rails Migrations Explained</a>
 
 ### Les relations entre les models des BDD
 <hr>
