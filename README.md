@@ -146,6 +146,7 @@ POST : les données ne transiteront pas par l'URL, l'utilisateur ne les verra do
 <hr>
 
 Les migrations dans Rails nous permettent de faire évoluer le schema de notre base de donnée facilement, sans faire de SQL. 
+On écrit une migration et celle-ci update notre bdd.
 
 <p align="center">
 	<img src="https://leanpub.com/site_images/rails3dot0-astudentmanual/db-cheatsheet.png" alt="db-cheatsheet" traget="_blank">
