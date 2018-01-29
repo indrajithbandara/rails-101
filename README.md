@@ -11,7 +11,7 @@
 ### La différence entre un site statique et un site dynamique
 <hr>
 
-[![Différence entre un site statique et un site dynamique](http://img.youtube.com/vi/cPDPci-SvdM/0.jpg)](http://www.youtube.com/watch?v=cPDPci-SvdM)
+[![Différence entre un site statique et un site dynamique](https://www.ibrandox.com/SecureAdmin/LargeImg/9a6a35f3d1634154a306b1a67c6b67aa.jpg)](http://www.youtube.com/watch?v=zC03bcuVZHY)
 
 
 
