@@ -63,10 +63,9 @@ Dans les contrôleurs, il existe sept routes très fréquemment utilisées :
 
 En ligne de commande on peut afficher toutes les routes disponibles dans notre application
 
-```rails routes```
+`rails routes`
 
-```
-
+`
 GET  /articles(.:format) articles#index
 POST  /articles(.:format) articles#create
 GET  /articles/new(.:format) articles#new
@@ -74,7 +73,7 @@ GET  /articles/:id/edit(.:format) articles#edit
 GET  /articles/:id(.:format) articles#show
 PATCH  /articles/:id(.:format) articles#update
 PUT  /articles/:id(.:format) articles#update
-DELETE /articles/:id(.:format) articles#destroy```
+DELETE /articles/:id(.:format) articles#destroy`
 
 <a href="https://openclassrooms.com/courses/continuez-avec-ruby-on-rails/simplifiez-la-configuration-de-vos-routes">OPC</a>
 
