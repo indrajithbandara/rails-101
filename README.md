@@ -11,6 +11,9 @@
 ### La différence entre un site statique et un site dynamique
 <hr>
 
+[![Différence entre un site statique et un site dynamique](http://img.youtube.com/vi/cPDPci-SvdM/0.jpg)](http://www.youtube.com/watch?v=cPDPci-SvdM)
+
+
 
 ### Le MVC
 <hr>
