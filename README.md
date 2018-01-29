@@ -12,6 +12,26 @@
 <hr>
 
 
+### Le MVC
+<hr>
+
+### Les routes
+<hr>
+
+### Les Bases de Données
+<hr>
+
+### GET / POST
+<hr>
+
+### Le concept de migration
+<hr>
+
+
+### Les relations entre les models des BDD
+<hr>
+
+
 
 
 
