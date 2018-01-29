@@ -167,7 +167,7 @@ Chaque ligne, également appelée tuple, comprend des données sur une instance 
 Le modèle tient également compte des types de relations entre ces tables, notamment les relations un-à-un, un-à-plusieurs et plusieurs-à-plusieurs. Voici un exemple :
 
 <p align="center">
-	<img src="https://cdn.tutsplus.com/net/authors/lalith-polepeddi/relational-databases-for-dummies-fig4.png" alt="bdd">
+	<img src="https://blog.philipphauer.de/blog/2015/0514-relational-databases-strength-weaknesses-mongodb/ImpedenceMismatch-OO-Relational1.png" alt="bdd">
 </p>
 
 <a href="https://www.lucidchart.com/pages/fr/quest-ce-quun-mod%C3%A8le-de-base-de-donn%C3%A9es">Source</a>
