@@ -60,26 +60,6 @@ Ce *design pattern* est une solution reconnue permettant de séparer l’afficha
 
 Dans les contrôleurs, il existe sept routes très fréquemment utilisées :
 
-index, create, show, update, destroy, new, edit.
-
-Quand nous respectons ces routes, tout un tas de choses peuvent s’automatiser. Par exemple﻿﻿, il est possible de passer de ceci :
-
-```# config/routes.rb
-Rails.application.routes.draw do
-  get 'articles' => 'articles#index'
-  post 'articles' => 'articles#create'
-  get 'articles/:id' => 'articles#show'
-  patch 'articles/:id' => 'articles#update'
-  delete 'articles/:id' => 'articles#destroy'
-end```
-
-À ceci :
-
-```
-# config/routes.rb
-Rails.application.routes.draw do
-  resources :books, only: [:index, :create, :show, :update, :destroy]
-end```
 
 En ligne de commande on peut afficher toutes les routes disponibles dans notre application
 
@@ -95,6 +75,7 @@ GET  /articles/:id(.:format) articles#show
 PATCH  /articles/:id(.:format) articles#update
 PUT  /articles/:id(.:format) articles#update
 DELETE /articles/:id(.:format) articles#destroy```
+
 <a href="https://openclassrooms.com/courses/continuez-avec-ruby-on-rails/simplifiez-la-configuration-de-vos-routes">OPC</a>
 
 <a href="http://guides.rubyonrails.org/routing.html">Routing avec Rails DOC</a>
