@@ -162,15 +162,20 @@ On écrit une migration et celle-ci update notre bdd.
 ### Les relations entre les models des BDD
 <hr>
 
->Le modèle le plus courant, appelé modèle relationnel, trie les données dans des tables, que l'on appelle aussi des relations, dont chacune se compose de colonnes et de lignes. Chaque colonne contient un attribut de l'entité en question, comme le prix, le code postal ou la date de naissance. L'ensemble des attributs d'une relation est appelé domaine. La clé primaire est constituée par un attribut spécifique ou une combinaison d'attributs. On peut y faire référence dans d'autres tables : elle est alors appelée clé étrangère.
+Le modèle le plus courant, appelé modèle relationnel, trie les données dans des tables, que l'on appelle aussi des relations, dont chacune se compose de colonnes et de lignes. Chaque colonne contient un attribut de l'entité en question, comme le prix, le code postal ou la date de naissance. L'ensemble des attributs d'une relation est appelé domaine. La clé primaire est constituée par un attribut spécifique ou une combinaison d'attributs. On peut y faire référence dans d'autres tables : elle est alors appelée clé étrangère.
 Chaque ligne, également appelée tuple, comprend des données sur une instance spécifique de l'entité en question, comme un employé en particulier.
-Le modèle tient également compte des types de relations entre ces tables, notamment les relations un-à-un, un-à-plusieurs et plusieurs-à-plusieurs. Voici un exemple :
+Le modèle tient également compte des types de relations entre ces tables, notamment les relations un-à-un, un-à-plusieurs et plusieurs-à-plusieurs. Voici un exemple : 
+
 
 <p align="center">
 	<img src="https://blog.philipphauer.de/blog/2015/0514-relational-databases-strength-weaknesses-mongodb/ImpedenceMismatch-OO-Relational1.png" alt="bdd">
 </p>
 
 <a href="https://www.lucidchart.com/pages/fr/quest-ce-quun-mod%C3%A8le-de-base-de-donn%C3%A9es">Source</a>
+
+<a href="https://openclassrooms.com/courses/faites-une-base-de-donnees-avec-uml/comprendre-les-cles-primaires">OPC Clefs Primaires</a>
+<a href="https://openclassrooms.com/courses/faites-une-base-de-donnees-avec-uml/mettez-en-oeuvre-les-differents-types-de-relations-a-laide-des-cles-etrangeres#">OPC Suite</a>
+
 
 
 [logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png "Ruby On Rails"
