@@ -1,4 +1,4 @@
-# Découverte de Ruby on Rails
+# Découverte de Ruby on Rails ![alt text][logo]
 
 1. La différence entre un site statique et un site dynamique
 2. Le MVC
@@ -10,6 +10,12 @@
 
 ### La différence entre un site statique et un site dynamique
 
+
+
+
+
+
+[logo]: https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ruby_On_Rails_Logo.svg/200px-Ruby_On_Rails_Logo.svg.png "Ruby On Rails"
 
 
 
