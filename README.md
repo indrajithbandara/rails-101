@@ -58,24 +58,28 @@ Ce *design pattern* est une solution reconnue permettant de séparer l’afficha
 ### Les routes
 <hr>
 
+Dans le framework Rails nos routes se trouve dans `config/routes.rb`
+
+Elle contienne un verbe 
+
 Dans les contrôleurs, il existe sept routes très fréquemment utilisées :
 
 >index, create, show, update, destroy, new, edit.
 
 
-En ligne de commande on peut afficher toutes les routes disponibles dans notre application
+En ligne de commande on peut afficher toutes les routes disponibles dans notre application comme ceci:
 
 `rails routes`
 
 `
-GET  /articles(.:format) articles#index
-POST  /articles(.:format) articles#create
-GET  /articles/new(.:format) articles#new
-GET  /articles/:id/edit(.:format) articles#edit
-GET  /articles/:id(.:format) articles#show
-PATCH  /articles/:id(.:format) articles#update
-PUT  /articles/:id(.:format) articles#update
-DELETE /articles/:id(.:format) articles#destroy`
+GET  /articles(.:format) articles#index`
+`POST  /articles(.:format) articles#create`
+`GET  /articles/new(.:format) articles#new`
+`GET  /articles/:id/edit(.:format) articles#edit`
+`GET  /articles/:id(.:format) articles#show`
+`PATCH  /articles/:id(.:format) articles#update`
+`PUT  /articles/:id(.:format) articles#update`
+`DELETE /articles/:id(.:format) articles#destroy`
 
 <a href="https://openclassrooms.com/courses/continuez-avec-ruby-on-rails/simplifiez-la-configuration-de-vos-routes">OPC</a>
 
