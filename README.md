@@ -9,6 +9,7 @@
 7. Les relations entre les models des BDD
 
 ### La différence entre un site statique et un site dynamique
+<hr>
 
 
 
