@@ -60,6 +60,8 @@ Ce *design pattern* est une solution reconnue permettant de séparer l’afficha
 
 Dans les contrôleurs, il existe sept routes très fréquemment utilisées :
 
+>index, create, show, update, destroy, new, edit.
+
 
 En ligne de commande on peut afficher toutes les routes disponibles dans notre application
 
