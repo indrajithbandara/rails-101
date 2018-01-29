@@ -13,11 +13,12 @@
 
 Une page web statique est une page web dont le contenu ne varie pas en fonction des caractéristiques de la demande, c'est-à-dire qu'à un moment donné tous les internautes qui demandent la page reçoivent le même contenu.
 
+<div> 
+<p>
 À l'inverse, une page web dynamique est générée à la demande et son contenu varie en fonction des caractéristiques de la demande (heure, adresse IP de l'ordinateur du demandeur, formulaire rempli par le demandeur, etc.) qui ne sont connues qu'au moment de sa consultation.
-
-<p align="right">
-	<a href="https://fr.wikipedia.org/wiki/Page_web_statique">Wikipédia</a>
+	<a align="right" href="https://fr.wikipedia.org/wiki/Page_web_statique">Wikipédia</a>
 </p>
+</div>
 
 <p align="center">
 	<img src="https://www.ibrandox.com/SecureAdmin/LargeImg/9a6a35f3d1634154a306b1a67c6b67aa.jpg" alt="La différence entre un site statique et un site dynamique">
