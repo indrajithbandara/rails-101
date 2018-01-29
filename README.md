@@ -88,12 +88,38 @@ En ligne de commande on peut afficher toutes les routes disponibles dans notre a
 
 `DELETE /articles/:id(.:format) articles#destroy`
 
-<a href="https://openclassrooms.com/courses/continuez-avec-ruby-on-rails/simplifiez-la-configuration-de-vos-routes">OPC</a>
-
 <a href="http://guides.rubyonrails.org/routing.html">Routing avec Rails DOC</a>
+
+<a href="https://openclassrooms.com/courses/continuez-avec-ruby-on-rails/simplifiez-la-configuration-de-vos-routes">OPC</a>
 
 ### Les Bases de Données
 <hr>
+
+Dans le fichier `config/database.yml` on constate que Rails utilise par default sqlite3, ceci est modifiable dès l' installation en ligne de commande avec l' option `-d` ou `--database` `mysql, oracle, postgresql, sqlite3, frontbase, ibm_db, sqlserver, jdbcmysql, jdbcsqlite3, jdbcpostgresql, jdbc`
+
+On peut également configurer un base de donnée par environnement, development, test, production.
+
+>Une base SQLite3 a la particularité d'être contenue dans un fichier qui porte le même nom.
+
+`
+default: &default
+  adapter: sqlite3
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/development.sqlite3
+test:
+  <<: *default
+  database: db/test.sqlite3
+production:
+  <<: *default
+  database: db/production.sqlite3`
+
+  <img src="https://ruudwijnands.files.wordpress.com/2014/03/database_yml_-_testproject_-____rubymineprojects_testproject_.png" alt="database" targer="_blank">
+
+<a href="https://www.tutorialspoint.com/ruby-on-rails/rails-database-setup.htm">Rails DB setup</a>
 
 ### GET / POST
 <hr>
