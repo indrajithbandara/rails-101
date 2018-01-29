@@ -115,7 +115,8 @@ test:
   database: db/test.sqlite3
 production:
   <<: *default
-  database: db/production.sqlite3```
+  database: db/production.sqlite3
+  ```
 
 <p align="center">
 
